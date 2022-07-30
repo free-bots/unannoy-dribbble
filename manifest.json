@@ -1,0 +1,17 @@
+{
+    "name": "unannoy-dribbble",
+    "description": "removes the annoying replacement to signup url if you are not logged in",
+    "version": "1.0",
+    "manifest_version": 3,
+    "content_scripts": [
+        {
+            "matches": [
+                "https://*.dribbble.com/*"
+            ],
+            "run_at": "document_idle",
+            "js": [
+                "content-script.js"
+            ]
+        }
+    ]
+}
